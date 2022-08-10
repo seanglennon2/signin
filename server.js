@@ -31,7 +31,7 @@ app.use('/route',router);
 
 //home route
 app.get('/',(req,res)=>{
-	res.render('base',{title:"Login System"});
+	res.render('index',{title:"Login System"});
 })
 
 app.listen(port, ()=>{console.log("on http://localhost:3000")});

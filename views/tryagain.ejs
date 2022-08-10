@@ -10,9 +10,6 @@
 				<!--/div-->
 			<% } %>
 			<span>Create New Account</span>
-			<% if (locals.errmsg){ %>
-				<h4><%= errmsg %></h4>
-			<% }; %>
 		</div>
 		<form action="/route/newuser" method="post" class="pt-3">
 			<div class="form-group pb-3">
@@ -26,6 +23,7 @@
 				<input type="password" class="form-control" name="repassword" placeholder="re-enter password">
 			</div>
 			<button type="submit" class="btn btn-success rounded">Submit</button>
+			<h5>Passwords do not match</h5>
 		</form>
 	</div>
 </div>
