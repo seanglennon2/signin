@@ -80,7 +80,7 @@ router.get('/logout',(req,res)=>{
 			res.send("Error");
 		}
 		else{
-			res.render('./index',{title: "Express",logout:"logout successful"});
+			res.render('./index',{title: "Login app",logout:"logout successful"});
 		}
 	});
 });
